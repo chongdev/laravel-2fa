@@ -1,8 +1,49 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+
+// Custom styles
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #111110;
+        color: #fff;
+    }
+
+    .card {
+        background-color: #171717;
+        color: #fff;
+        border-radius: 10px;
+        border-color: #3d444d;
+    }
+
+    .form-control {
+        border-color: #3d444d;
+        color: #fff;
+
+        &:focus {
+            border-color: #3d444d;
+            color: #fff;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: #171717;
+        color: #fff;
+        border-color: #3d444d;
+    }
+
+    .dropdown-item {
+        color: #fff;
+        background-color: #171717;
+
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}

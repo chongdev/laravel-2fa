@@ -1,5 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 @charset "UTF-8";
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -81,8 +92,8 @@
   --bs-body-line-height: 1.6;
   --bs-body-color: #212529;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg: #f8fafc;
-  --bs-body-bg-rgb: 248, 250, 252;
+  --bs-body-bg: #111110;
+  --bs-body-bg-rgb: 17, 17, 16;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
   --bs-secondary-color: rgba(33, 37, 41, 0.75);
@@ -2472,10 +2483,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #111110, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #111110, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -11964,5 +11975,38 @@ textarea.form-control-lg {
   }
   .d-print-none {
     display: none !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111110;
+    color: #fff;
+  }
+  .card {
+    background-color: #171717;
+    color: #fff;
+    border-radius: 10px;
+    border-color: #3d444d;
+  }
+  .form-control {
+    border-color: #3d444d;
+    color: #fff;
+  }
+  .form-control:focus {
+    border-color: #3d444d;
+    color: #fff;
+  }
+  .dropdown-menu {
+    background-color: #171717;
+    color: #fff;
+    border-color: #3d444d;
+  }
+  .dropdown-item {
+    color: #fff;
+    background-color: #171717;
+  }
+  .dropdown-item:hover {
+    background-color: #000;
+    color: #fff;
   }
 }
